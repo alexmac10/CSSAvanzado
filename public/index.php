@@ -78,13 +78,34 @@
           nulla, ut convallis elit neque a lacus. Maecenas bibendum scelerisque 
           magna in placerat. Vivamus at ipsum eu quam commodo euismod. Maecenas 
           ornare, ex vel eleifend semper, justo massa tempor leo, sed bibendum 
-          nibh lorem sed mauris.
+          nibh lorem sed mauris.     
         </p>
       </div>
     </div>
     <div class="contact"> 
+      <div class="contact">
+        <h2 class="contact__title section__title">Contacto</h2>
+        <p class="contact__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis 
+          aliquam vestibulum. Pellentesque non arcu fringilla felis vehicula 
+          egestas a eget libero. Nam porta, purus dignissim gravida mollis, 
+          diam felis pharetra mauris, in porta lorem dui non orci. Praesent 
+          venenatis dolor et suscipit consectetur. Mauris facilisis neque sem, 
+          laoreet tristique libero ornare in.
+        </p>
+        <form class="form--contact">
+          <input name="name" id="name" placeholder="Nombres">
+          <input type="email" name="email" id="email" placeholder="Correo electronico">
+          <textarea name="message" id="massage"></textarea>
+          <input type="submit" value="Contratame">
+        </form>
+      </div>
     </div>
     <footer>
+      <div class="l-firts">Alex Palma</div>
+      <div class="l-last"> 
+        <div class="social-networks"><a class="icon-facebook" href="/PruebasCSS/public/"></a><a class="icon-twitter" href="/PruebasCSS/public/"></a><a class="icon-youtube" href="/PruebasCSS/public/"></a></div>
+      </div>
     </footer>
   </body>
 </html>
