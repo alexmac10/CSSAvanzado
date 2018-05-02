@@ -8,3 +8,8 @@
         @content;
     }
 }
+
+@mixin font($size){
+    font-size: nth(map-get($fonts,$size),1);
+    line-height: nth(map-get($fonts,$size),2);
+}

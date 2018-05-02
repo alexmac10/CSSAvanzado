@@ -20,6 +20,41 @@ img {
   max-width: 100%;
 }
 
+.logo--main {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 60%;
+}
+
+.menu,
+[class*="menu--"] {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+  .menu,
+  [class*="menu--"] {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu--main {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: rgba(67, 67, 67, 0.5);
+}
+
 body {
   font-family: 'Zilla Slab', serif;
   font-size: 20px;
@@ -84,4 +119,14 @@ h1 {
 .title2, .title3 {
   margin-top: 1.5em;
   margin-bottom: 1em;
+}
+
+.small, .smaller {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #D4671F;
+  color: var(--accent);
 }

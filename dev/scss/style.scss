@@ -1,7 +1,21 @@
 @import "01Config/functions";
 @import "01Config/vars";
 @import "01Config/mixins";
+
 //base
 @import "02Base/Base";
+
+//layout
+@import "03Layout/Layout";
+
+//Componentes
+@import "04Componentes/Banners";
+@import "04Componentes/Forms";
+@import "04Componentes/Galleries";
+@import "04Componentes/Logo";
+@import "04Componentes/Menus";
+@import "04Componentes/Sections";
+
 //temas
 @import "05Theme/typography";
+@import "05Theme/Theme";

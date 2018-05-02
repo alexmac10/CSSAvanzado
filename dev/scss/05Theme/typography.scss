@@ -1,24 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Zilla+Slab:400,400i,600,600i');
 
-
-$fonts: (
-    title1: 50px 60px,
-    title2: 32px 40px,
-    title3: 25px 30px,
-    base: 20px 30px,
-    small: 16px 20px,
-    smaller: 14px 20px
-);
-
-//font weigth
-$normal: 400;
-$semibold: 600;
-
-@mixin font($size){
-    font-size: nth(map-get($fonts,$size),1);
-    line-height: nth(map-get($fonts,$size),2);
-}
-
 body{
     font-family: 'Zilla Slab', serif;
     @include font(base);
@@ -66,4 +47,13 @@ h1{
 .title2, .title3{
     margin-top: 1.5em;
     margin-bottom: 1em;
+}
+
+.small, .smaller{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+a {
+    @include var(color,accent);
 }

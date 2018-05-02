@@ -1,0 +1,25 @@
+.menu, 
+[class*="menu--"]
+{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    text-align: center;
+    
+    @include from(medium){
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.menu__link{
+    text-decoration: none;
+    font-weight: $semibold;
+}
+
+.menu--main{
+    border-top: 1px solid;
+    border-bottom: 1px solid;    
+    border-color: rgba(map-get($vars,primary),.5);
+}

@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>               
-    <header><a class="logo--main" href="/CSSAvanzado/public/"><img src="img/logo.png"></a>
+    <header><a href="/CSSAvanzado/public/"><img class="logo--main" src="img/logo.png"></a>
     </header>
     <nav>
       <ul class="menu--main">
