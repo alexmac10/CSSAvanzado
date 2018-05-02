@@ -1,4 +1,7 @@
+@import "01Config/functions";
 @import "01Config/vars";
+@import "01Config/mixins";
+//base
 @import "02Base/Base";
+//temas
 @import "05Theme/typography";
-

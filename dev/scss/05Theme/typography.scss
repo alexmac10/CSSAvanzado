@@ -1,10 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:400,400i,600,600i');
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
+$fonts: (
+    title1: 50px 60px,
+    title2: 32px 40px,
+    title3: 25px 30px,
+    base: 20px 30px,
+    small: 16px 20px,
+    smaller: 14px 20px
+);
+
+//font weigth
+$normal: 400;
+$semibold: 600;
+
+@mixin font($size){
+    font-size: nth(map-get($fonts,$size),1);
+    line-height: nth(map-get($fonts,$size),2);
+}
+
+body{
+    font-family: 'Zilla Slab', serif;
+    @include font(base);
+}
+
+.title1 {
+    @include font(title2);
+    @include from(large){
+        @include font(title1);
+    }    
+}
+
+.title2 {
+    @include font(title3);
+    @include from(large){
+        @include font(title2);
+    }    
+}
+
+.title3 {
+    @include font(base);
+    @include from(large){
+        @include font(title3);
+    }    
+}
+
+small, .small{
+    @include font(small);
+}
+
+.smaller{
+    @include font(smaller);
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: $semibold;
+}
 
 h1{
-    font-family: 'Open Sans', sans-serif;    
-    color: $secundary;
-    text-align: center;
-    border: 1px solid black;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.title2, .title3{
+    margin-top: 1.5em;
+    margin-bottom: 1em;
 }

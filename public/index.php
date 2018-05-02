@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>               
-    <header><a class="logo--main" href="/PruebasCSS/public/"><img src="img/logo.png"></a>
+    <header><a class="logo--main" href="/CSSAvanzado/public/"><img src="img/logo.png"></a>
     </header>
     <nav>
       <ul class="menu--main">
@@ -104,7 +104,7 @@
     <footer>
       <div class="l-firts">Alex Palma</div>
       <div class="l-last"> 
-        <div class="social-networks"><a class="icon-facebook" href="/PruebasCSS/public/"></a><a class="icon-twitter" href="/PruebasCSS/public/"></a><a class="icon-youtube" href="/PruebasCSS/public/"></a></div>
+        <div class="social-networks"><a class="icon-facebook" href="/CSSAvanzado/public/"></a><a class="icon-twitter" href="/CSSAvanzado/public/"></a><a class="icon-youtube" href="/CSSAvanzado/public/"></a></div>
       </div>
     </footer>
   </body>

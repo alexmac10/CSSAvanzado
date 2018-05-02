@@ -11,7 +11,7 @@ const server = browserSync.create();
 gulp.task('sass', () => {
     gulp.src('./dev/scss/style.scss')
             .pipe(sass({
-                outputStyle: 'compressed'
+                outputStyle: 'expanded'
             }))
             .pipe(gulp.dest('./public/css'))
             .pipe(server.stream({match: '**/*.css'}));
@@ -30,7 +30,7 @@ gulp.task('pug', () => {
 
 gulp.task('default', () => {
     server.init({
-        proxy: 'http://localhost/PruebasCSS/public/index.php'
+        proxy: 'http://localhost/CSSAvanzado/public/index.php'
     });
     gulp.watch('./dev/pug/**/*.pug', ['pug', server.reload]);
     gulp.watch('./dev/scss/**/*.scss', ['sass']);
