@@ -10,7 +10,7 @@
     </header>
     <nav>
       <ul class="menu--main">
-        <li class="menu__item"><a class="menu__link" href="#home">Inicio</a></li>
+        <li class="menu__item"><a class="menu__link active" href="#home">Inicio</a></li>
         <li class="menu__item"><a class="menu__link" href="#gallery">Galeria</a></li>
         <li class="menu__item"><a class="menu__link" href="#about">Sobre mi</a></li>
         <li class="menu__item"><a class="menu__link" href="#contact">Contacto</a></li>
@@ -26,7 +26,7 @@
     </div>
     <div class="gallery-container">
       <div class="gallery">
-        <h2 class="gallery_title section_title"></h2>
+        <h2 class="gallery_title section__title">Galería</h2>
         <nav class="gallery_nav">
           <ul class="menu--section">
             <li class="menu__item"><a class="menu__link" href="#">Todo</a></li>

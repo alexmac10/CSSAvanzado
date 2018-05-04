@@ -7,7 +7,7 @@
     padding-left: 0;
     text-align: center;
     
-    @include from(medium){
+    @include from(large){
         display: flex;
         justify-content: space-around;
     }
@@ -16,6 +16,16 @@
 .menu__link{
     text-decoration: none;
     font-weight: $semibold;
+    color: $primary;
+    
+    &.active{
+        color: $accent;
+    }
+    
+    @include from(large){
+        display: block;
+        line-height: 3;        
+    }
 }
 
 .menu--main{
