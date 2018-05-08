@@ -1,0 +1,50 @@
+
+.about-container{
+    background: url(../img/about.jpg);
+    clip-path: polygon(0 9%, 100% 0, 100% 91%, 0 100%);
+    padding: 3em 0;
+    position: relative;
+    &:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: $primary;
+        opacity: .5;
+    }
+}
+
+.about{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    @include from(large){
+        display: flex;
+    }
+    
+    &__img{
+        display: none;
+        @include from(large){
+            display: block;  
+            box-shadow: 0 10px 10px -5px #000;
+        }
+    }
+    
+    &__description{
+        background:  rgba($accent,.9);
+        padding: 1em;
+        color: #fff;
+        @include font(small);
+        font-style: italic;
+        @include from(large){
+            width: 60%;
+            align-self: center;
+            @include font(base);
+            margin-left: -2em;
+            padding: 2em;
+        }
+        
+    }
+}
