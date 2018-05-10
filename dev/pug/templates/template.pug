@@ -3,21 +3,22 @@ html(lang="es")
     head
         title CSS Desde Cero - Proyecto final
         meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1")
+        link(href="css/icons.css" rel="stylesheet")
         link(href="css/style.css" rel="stylesheet")
     body                
-        header
+        header.l-container
             block header
-        nav
+        nav.l-container
             block nav
-        .banner-container
+        .banner-container.l-container--full
             block banner
-        .gallery-container
+        .gallery-container.l-container.l-section
             block gallery
-        .about-container
+        .about-container.l-container--full.l-section
             block about
-        .contact 
+        .contact.l-container.l-section 
             block contact
-        footer
+        footer.footer.l-container--full
             block footer
 
 

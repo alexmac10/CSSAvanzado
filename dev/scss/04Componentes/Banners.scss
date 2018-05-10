@@ -3,7 +3,12 @@
     padding-top: 5em;
     padding-bottom: 5em;
     position: relative;
-    
+
+    @include from(large){
+        padding-top: 9em;
+        padding-bottom: 9em;
+    }
+
     &::before{
         content: "";
         width: 100%;
@@ -14,22 +19,31 @@
         background: linear-gradient(130deg, $accent, $primary);
         opacity: .8;
     }
-    
+
     &__copy{
         text-align: center;
         color: #fff;
         position: relative;
+        @include from(large){
+            text-align: left;
+            
+        }
     }
-    
+
     &__title{
-        @include font(title2);
+        @include font(title1);
+        margin-bottom: 0;
     }
-    
+
     &__subtitle{
         background: rgba($primary,.8);
         padding: .5em 1em;
         display: table;
         margin-right: auto;
         margin-left: auto;
+        
+        @include from(large){
+            margin-left: 4em;
+        }
     }
 }

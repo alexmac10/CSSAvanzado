@@ -28,7 +28,18 @@
         display: none;
         @include from(large){
             display: block;  
-            box-shadow: 0 10px 10px -5px #000;
+            &:after{
+                content: "";
+                width: 100%;
+                background: #000;
+                display: block;
+                height: 50px;
+                margin-top: -55px;
+                filter: blur(4px);
+                position: relative;
+                z-index: -1;
+            }
+            
         }
     }
     

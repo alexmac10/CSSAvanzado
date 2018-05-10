@@ -13,3 +13,16 @@
     font-size: nth(map-get($fonts,$size),1);
     line-height: nth(map-get($fonts,$size),2);
 }
+
+
+@mixin button ($type){
+    line-height: 3;
+    border: 1px solid $primary;    
+    @if $type == primary {
+        background: $accent;
+        color: #fff;
+    } @else if $type == secundary {
+        background: $secundary;
+        color: $primary;
+    }
+}

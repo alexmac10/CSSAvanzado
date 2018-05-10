@@ -3,12 +3,13 @@
   <head>
     <title>CSS Desde Cero - Proyecto final</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <link href="css/icons.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>               
-    <header><a href="/CSSAvanzado/public/"><img class="logo--main" src="img/logo.png"></a>
+    <header class="l-container"><a href="/CSSAvanzado/public/"><img class="logo--main" src="img/logo.png"></a>
     </header>
-    <nav>
+    <nav class="l-container">
       <ul class="menu--main">
         <li class="menu__item"><a class="menu__link active" href="#home">Inicio</a></li>
         <li class="menu__item"><a class="menu__link" href="#gallery">Galeria</a></li>
@@ -16,20 +17,20 @@
         <li class="menu__item"><a class="menu__link" href="#contact">Contacto</a></li>
       </ul>
     </nav>
-    <div class="banner-container">
+    <div class="banner-container l-container--full">
       <div class="banner">
-        <div class="banner__copy">
+        <div class="banner__copy l-container">
           <h2 class="banner__title">Imágenes</h2>
           <p class="banner__subtitle">Que cuentan historias</p>
         </div>
       </div>
     </div>
-    <div class="gallery-container">
+    <div class="gallery-container l-container l-section">
       <div class="gallery">
         <h2 class="gallery_title section__title">Galería</h2>
         <nav class="gallery_nav">
           <ul class="menu--section">
-            <li class="menu__item"><a class="menu__link" href="#">Todo</a></li>
+            <li class="menu__item"><a class="menu__link active" href="#">Todo</a></li>
             <li class="menu__item"><a class="menu__link" href="#">Gente</a></li>
             <li class="menu__item"><a class="menu__link" href="#">Lugares</a></li>
             <li class="menu__item"><a class="menu__link" href="#">Naturaleza</a></li>
@@ -63,7 +64,7 @@
         </div>
       </div>
     </div>
-    <div class="about-container">
+    <div class="about-container l-container--full l-section">
       <div class="about">
         <div class="about__img"><img src="img/camara.png"></div>
         <p class="about__description">
@@ -76,10 +77,10 @@
         </p>
       </div>
     </div>
-    <div class="contact"> 
+    <div class="contact l-container l-section"> 
       <div class="contact">
         <h2 class="contact__title section__title">Contacto</h2>
-        <p class="contact__description">
+        <p class="contact__description section__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis 
           aliquam vestibulum. Pellentesque non arcu fringilla felis vehicula 
           egestas a eget libero. Nam porta, purus dignissim gravida mollis, 
@@ -88,17 +89,19 @@
           laoreet tristique libero ornare in.
         </p>
         <form class="form--contact">
-          <input name="name" id="name" placeholder="Nombres">
-          <input type="email" name="email" id="email" placeholder="Correo electronico">
-          <textarea name="message" id="massage"></textarea>
-          <input type="submit" value="Contratame">
+          <input class="form__item" name="name" id="name" placeholder="Nombres">
+          <input class="form__item" type="email" name="email" id="email" placeholder="Correo electronico">
+          <textarea class="form__item" name="message" id="massage" placeholder="Escribe tu mensajes" rows="8"></textarea>
+          <input class="form__item form__submit" type="submit" value="Contratame">
         </form>
       </div>
     </div>
-    <footer>
-      <div class="l-firts">Alex Palma</div>
-      <div class="l-last"> 
-        <div class="social-networks"><a class="icon-facebook" href="/CSSAvanzado/public/"></a><a class="icon-twitter" href="/CSSAvanzado/public/"></a><a class="icon-youtube" href="/CSSAvanzado/public/"></a></div>
+    <footer class="footer l-container--full">
+      <div class="l-container--row">
+        <div class="l-firts">Alex Palma</div>
+        <div class="l-last"> 
+          <div class="social-networks"><a class="icon-facebook" href="/CSSAvanzado/public/"></a><a class="icon-twitter" href="/CSSAvanzado/public/"></a><a class="icon-youtube" href="/CSSAvanzado/public/"></a></div>
+        </div>
       </div>
     </footer>
   </body>
